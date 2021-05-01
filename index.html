@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <p id="para1">Hangman Game</p>
+  <div>
+    <div>
+      <p id="mistakesNumber" align="right">Number of mistakes: 0</p>
+      <button onclick="createGame()" id="playButton"> Play </button>
+      <form id="containerForm" onsubmit="return false"> </form>
+    </div>
+    <div align="center">
+      <img src="/hangman/hangman.png" alt="hangman" width="500" align="center" id="hangmanPic">
+      <p id="word"> </p>
+      <div>
+        <br>
+        <button id="a" onclick="checkLetter(this.id)" class="keyboardButton">a</button> <button id="b" onclick="checkLetter(this.id)" class="keyboardButton">b</button> <button id="c" onclick="checkLetter(this.id)" class="keyboardButton">c</button>
+        <button id="d" onclick="checkLetter(this.id)" class="keyboardButton">d</button> <button id="e" onclick="checkLetter(this.id)" class="keyboardButton">e</button> <button id="f" onclick="checkLetter(this.id)" class="keyboardButton">f</button>
+        <button id="g" onclick="checkLetter(this.id)" class="keyboardButton">g</button> <button id="h" onclick="checkLetter(this.id)" class="keyboardButton">h</button> <button id="i" onclick="checkLetter(this.id)" class="keyboardButton">i</button>
+        <button id="j" onclick="checkLetter(this.id)" class="keyboardButton">j</button> <button id="k" onclick="checkLetter(this.id)" class="keyboardButton">k</button> <button id="l" onclick="checkLetter(this.id)" class="keyboardButton">l</button>
+        <button id="m" onclick="checkLetter(this.id)" class="keyboardButton">m</button> <button id="n" onclick="checkLetter(this.id)" class="keyboardButton">n</button> <button id="o" onclick="checkLetter(this.id)" class="keyboardButton">o</button>
+        <br> <br>
+        <button id="p" onclick="checkLetter(this.id)" class="keyboardButton">p</button> <button id="q" onclick="checkLetter(this.id)" class="keyboardButton">q</button> <button id="r" onclick="checkLetter(this.id)" class="keyboardButton">r</button>
+        <button id="s" onclick="checkLetter(this.id)" class="keyboardButton">s</button> <button id="t" onclick="checkLetter(this.id)" class="keyboardButton">t</button> <button id="u" onclick="checkLetter(this.id)" class="keyboardButton">u</button>
+        <button id="v" onclick="checkLetter(this.id)" class="keyboardButton">v</button> <button id="w" onclick="checkLetter(this.id)" class="keyboardButton">w</button> <button id="x" onclick="checkLetter(this.id)" class="keyboardButton">x</button>
+        <button id="y" onclick="checkLetter(this.id)" class="keyboardButton">y</button> <button id="z" onclick="checkLetter(this.id)" class="keyboardButton">z</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
