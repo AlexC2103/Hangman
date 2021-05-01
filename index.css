@@ -1,0 +1,86 @@
+#para1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+#para1:hover {
+  color: orange;
+  border-color: black;
+}
+#para1 {
+  transition-duration: 0.4s;
+}
+#playButton {
+  border: 2px solid #4CAF50;
+  background-color: white;
+  border-radius: 20%;
+  color: black;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  font-family: "Lucida Console";
+  font-size: 35px;
+  margin-left: 50px;
+}
+#word {
+  letter-spacing: 8px;
+  font-size: 30px;
+  font-family: "Arial";
+}
+#mistakesNumber {
+  margin-right: 100px;
+  font-size: 25px;
+  font-family: "Arial";
+}
+.keyboardButton {
+  background-color: #427ed6;
+  color: white;
+  width: 50px;
+  height: 40px;
+  font-size: 23px;
+  border-color: black;
+  border-radius: 20%;
+}
+.keyboardButton:hover:enabled {
+  background-color: #e8e8e8;
+  color: black;
+}
+.keyboardButton {
+  transition-duration: 0.2s;
+}
+.keyboardButton:disabled {
+  opacity: 0.5;
+}
+#playButton {
+  transition-duration: 0.4s;
+}
+#playButton:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+input[type=text] {
+  border-color: #108794;
+  border-radius: 10%;
+  width: 150px;
+  height: 30px;
+  margin-left: 20px;
+}
+input[type=text]:hover {
+  border-color: #108794;
+}
+input[type=submit] {
+  border: none;
+  width: 100px;
+  height: 33px;
+}
+input[type=submit]:hover {
+  color: black;
+  background-color: orange;
+  border-radius: 20%;
+}
+input[type=submit] {
+  transition-duration: 0.4s;
+}
+body {
+  background-color: #108794;
+}
