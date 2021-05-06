@@ -61,18 +61,21 @@ function checkLetter(clickedButtonId) {
       }
     }
 
-    document.getElementById(clickedButtonId).style.color = '#00ff0a';
-    document.getElementById(clickedButtonId).disabled = 'true';
+    if (ok) {
+      document.getElementById(clickedButtonId).style.color = '#00ff0a';
+      document.getElementById(clickedButtonId).disabled = 'true';
+    } else {
+      mistakes++;
+      document.getElementById(clickedButtonId).style.color = '#ff0000';
+      document.getElementById(clickedButtonId).disabled = 'true';
+      document.getElementById('mistakesNumber').innerHTML = 'Number of mistakes: ' + mistakes + ' / 6';
+    }
+
   } else {
     mistakes++;
     document.getElementById(clickedButtonId).style.color = '#ff0000';
     document.getElementById(clickedButtonId).disabled = 'true';
     document.getElementById('mistakesNumber').innerHTML = 'Number of mistakes: ' + mistakes + ' / 6';
-  }
-
-  if (ok) {
-    document.getElementById(clickedButtonId).style.color = '#00ff0a';
-    document.getElementById(clickedButtonId).disabled = 'true';
   }
 
   document.getElementById('word').innerHTML = returnWord;
